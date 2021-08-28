@@ -3,16 +3,8 @@ import pandas as pd
 
 df= pd.read_csv("Data.csv")
 
-df.head(12)
+df.style
 
-df.shape
+df.tail
 
-df.dtypes
-
-ax = sns.distplot(df.area_se)
-
-cols= df.columns
-
-for i in cols:
-  print(i)
-  
+df.isnull
